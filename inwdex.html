@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>qkrhn</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&family=Poppins&family=Oswald&family=Montserrat&family=Lobster&display=swap">
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+            overflow: hidden;
+        }
+        #text {
+            color: #fff;
+            font-size: 4rem;
+            transition: font-family 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+    <div id="text">soon</div>
+
+    <script>
+        const text = document.getElementById('text');
+        const fonts = [
+            'Roboto, sans-serif',
+            'Poppins, sans-serif',
+            'Oswald, sans-serif',
+            'Montserrat, sans-serif',
+            'Lobster, cursive'
+        ];
+        let index = 0;
+
+        setInterval(() => {
+            text.style.fontFamily = fonts[index];
+            index = (index + 1) % fonts.length;
+        }, 2000); // 2 saniyede bir yazı tipi değişir
+    </script>
+</body>
+</html>
