@@ -14,16 +14,37 @@
             align-items: center;
             background-color: #000;
             overflow: hidden;
+            position: relative;
         }
         #text {
             color: #fff;
             font-size: 4rem;
             transition: font-family 0.5s ease;
         }
+        .github-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: #1a1a1a;
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            text-decoration: none;
+            border: 2px solid #fff;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+        .github-button:hover {
+            background-color: #fff;
+            color: #000;
+            transform: scale(1.05);
+        }
     </style>
 </head>
 <body>
     <div id="text">soon</div>
+    <a href="https://github.com/karahanz" target="_blank" class="github-button">GitHub Hesabım</a>
 
     <script>
         const text = document.getElementById('text');
